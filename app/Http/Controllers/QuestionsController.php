@@ -9,7 +9,7 @@ use App\Http\Requests\AskQuestionRequest;
 class QuestionsController extends Controller
 {
 
-    public function __constructor(Type $var = null)
+    public function __construct(Type $var = null)
     {
         $this->middleware('auth',['except'=> 'index','show']);
     }
